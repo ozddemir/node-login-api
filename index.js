@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 const port = 4000;
 
@@ -17,7 +18,7 @@ app.use(function (req, res, next) {
     next();
 })
 
-//--login 
+// react servis tarafından gelen istek bu endpoint ile karşılanır
 app.post("/login", (req, res) => {
     gettokencommand(req, res, jwt);
 });

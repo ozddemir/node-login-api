@@ -19,6 +19,7 @@ const gettokencommand = (req, res, jwt) => {
     }
 };
 
+// Token geçerli bir token mı
 const tokencontrolcommand = (req, res, jwt) => {
     let token = req.query.token;
     try {
